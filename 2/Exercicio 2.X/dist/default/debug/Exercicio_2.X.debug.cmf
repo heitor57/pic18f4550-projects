@@ -1,0 +1,882 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/debug\Exercicio_2.X.debug.obj
+cinit CODE 0 1354 1354 16 1
+text0 CODE 0 1332 1332 22 1
+text1 CODE 0 1282 1282 38 1
+text2 CODE 0 10A6 10A6 5C 1
+text3 CODE 0 1380 1380 E 1
+text4 CODE 0 136A 136A 16 1
+text5 CODE 0 CC6 CC6 D6 1
+text6 CODE 0 AFA AFA E6 1
+text7 CODE 0 102A 102A 7C 1
+text8 CODE 0 12BA 12BA 2A 1
+text9 CODE 0 12E4 12E4 2A 1
+text10 CODE 0 138E 138E 8 1
+text11 CODE 0 1246 1246 3C 1
+text12 CODE 0 80A 80A 108 1
+text13 CODE 0 1204 1204 42 1
+text14 CODE 0 11B2 11B2 52 1
+text15 CODE 0 1102 1102 5A 1
+text16 CODE 0 130E 130E 24 1
+text17 CODE 0 912 912 F4 1
+text18 CODE 0 A06 A06 F4 1
+text19 CODE 0 BE0 BE0 E6 1
+text20 CODE 0 E68 E68 AE 1
+text21 CODE 0 D9C D9C CC 1
+text22 CODE 0 F16 F16 92 1
+text23 CODE 0 115C 115C 56 1
+text24 CODE 0 FA8 FA8 82 1
+cstackCOMRAM COMRAM 1 1 1 38 1
+smallconst SMALLCONST 0 800 800 A 1
+bssCOMRAM COMRAM 1 39 39 8 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7FF 1
+CONST 1396-7FFF 1
+STACK 60-7FF 1
+SMALLCONST 1396-7FFF 1
+CODE 4-7FF 1
+CODE 1396-7FFF 1
+BIGRAM 41-7FF 1
+COMRAM 41-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1396-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\Exercicio_2.X.debug.obj
+FA8 text24 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FA8 text24 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FB8 text24 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FC4 text24 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FC8 text24 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FCA text24 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FD4 text24 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FD6 text24 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FDA text24 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FE4 text24 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+FF8 text24 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+1008 text24 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+100A text24 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+1014 text24 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+1018 text24 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+1018 text24 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+1028 text24 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lldiv.c
+115C text23 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+115C text23 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+116C text23 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+1170 text23 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+1180 text23 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+118A text23 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+1194 text23 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+11A0 text23 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+11B0 text23 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+F16 text22 CODE >105:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+F18 text22 CODE >109:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+F7E text22 CODE >111:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+F96 text22 CODE >112:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+FA6 text22 CODE >113:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D9C text21 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+D9C text21 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DA0 text21 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DA4 text21 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DB4 text21 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DB8 text21 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DBC text21 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DCC text21 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DD0 text21 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DE0 text21 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DEC text21 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DF0 text21 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DF2 text21 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DFC text21 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+DFE text21 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E02 text21 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E0C text21 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E20 text21 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E30 text21 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E32 text21 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E3C text21 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E40 text21 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E46 text21 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E56 text21 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\aldiv.c
+E68 text20 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+E68 text20 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+E78 text20 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+E86 text20 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+E88 text20 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+E90 text20 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EAE text20 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EB0 text20 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EBC text20 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EC4 text20 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EE2 text20 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EE4 text20 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EEC text20 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EF6 text20 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EF8 text20 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EFA text20 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+EFE text20 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+F02 text20 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+F06 text20 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+F08 text20 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+BE0 text19 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+BE0 text19 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+BFA text19 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C08 text19 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C22 text19 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C30 text19 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C3C text19 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C42 text19 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C46 text19 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C4A text19 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C4E text19 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C50 text19 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C5C text19 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C5E text19 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C6A text19 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C6E text19 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C76 text19 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C86 text19 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C92 text19 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C94 text19 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C94 text19 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+C9C text19 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+CA0 text19 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+A06 text18 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A06 text18 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A20 text18 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A2E text18 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A48 text18 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A56 text18 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A5C text18 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A60 text18 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A64 text18 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A68 text18 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A6A text18 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A6C text18 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A78 text18 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A84 text18 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A88 text18 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A8C text18 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+A98 text18 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AA0 text18 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AA8 text18 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AAC text18 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AB0 text18 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AB4 text18 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AC0 text18 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AC8 text18 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AD0 text18 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+AD4 text18 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+912 text17 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+912 text17 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+92C text17 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+93E text17 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+964 text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+966 text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+972 text17 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+980 text17 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+984 text17 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+988 text17 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+992 text17 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9A4 text17 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9AE text17 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9B2 text17 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9B4 text17 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9BA text17 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9CC text17 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9D6 text17 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9D8 text17 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9DE text17 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9E4 text17 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+9F4 text17 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+130E text16 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwtoft.c
+130E text16 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwtoft.c
+1102 text15 CODE >44:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1104 text15 CODE >49:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1106 text15 CODE >52:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+110A text15 CODE >55:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+110E text15 CODE >58:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1112 text15 CODE >60:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1114 text15 CODE >49:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1128 text15 CODE >60:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1128 text15 CODE >77:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+112A text15 CODE >78:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+112E text15 CODE >80:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+11B2 text14 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11B2 text14 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11BA text14 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11C2 text14 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11C6 text14 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11C8 text14 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11CE text14 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11D0 text14 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11D4 text14 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11DA text14 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11E6 text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11EE text14 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11F0 text14 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11F6 text14 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11FA text14 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+11FA text14 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1202 text14 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+1204 text13 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1204 text13 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+120C text13 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1210 text13 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1212 text13 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1218 text13 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+121A text13 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+121E text13 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+122A text13 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1232 text13 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1238 text13 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+123C text13 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+123C text13 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+1244 text13 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+80A text12 CODE >26:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\itoa.c
+80A text12 CODE >28:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\itoa.c
+82C text12 CODE >29:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\itoa.c
+866 text12 CODE >30:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\itoa.c
+8A0 text12 CODE >31:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\itoa.c
+8DA text12 CODE >32:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\itoa.c
+900 text12 CODE >33:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\itoa.c
+1246 text11 CODE >31:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+1246 text11 CODE >35:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+124A text11 CODE >37:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+1254 text11 CODE >39:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+1258 text11 CODE >41:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+125A text11 CODE >42:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+125C text11 CODE >43:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+125E text11 CODE >44:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+1260 text11 CODE >45:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+1262 text11 CODE >47:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+1266 text11 CODE >48:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+1268 text11 CODE >49:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+126A text11 CODE >51:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+126E text11 CODE >52:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+1270 text11 CODE >37:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\atraso.c
+138E text10 CODE >30:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+1390 text10 CODE >32:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+1394 text10 CODE >33:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12E4 text9 CODE >35:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12E6 text9 CODE >37:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12E8 text9 CODE >38:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12EE text9 CODE >39:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12F0 text9 CODE >40:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12FC text9 CODE >41:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12FE text9 CODE >42:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+130A text9 CODE >43:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+130C text9 CODE >44:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12BA text8 CODE >46:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12BC text8 CODE >48:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12BE text8 CODE >49:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12C4 text8 CODE >50:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12C6 text8 CODE >51:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12D2 text8 CODE >52:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12D4 text8 CODE >53:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12E0 text8 CODE >54:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+12E2 text8 CODE >55:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+102A text7 CODE >76:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+102A text7 CODE >78:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+102E text7 CODE >80:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+1030 text7 CODE >82:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+1068 text7 CODE >83:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+106A text7 CODE >80:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+AFA text6 CODE >29:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+AFA text6 CODE >30:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+B00 text6 CODE >31:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+B0E text6 CODE >32:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+B66 text6 CODE >33:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+B6C text6 CODE >34:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+B72 text6 CODE >35:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+B7E text6 CODE >36:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+B84 text6 CODE >37:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+BDE text6 CODE >38:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+CC6 text5 CODE >31:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+CC6 text5 CODE >39:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+CCA text5 CODE >40:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+CCC text5 CODE >43:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+CCE text5 CODE >45:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+CD2 text5 CODE >50:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+CD4 text5 CODE >52:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D1C text5 CODE >54:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D22 text5 CODE >56:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D26 text5 CODE >57:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D2A text5 CODE >58:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D2C text5 CODE >59:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D46 text5 CODE >61:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D4E text5 CODE >62:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D6A text5 CODE >63:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D6C text5 CODE >66:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D8A text5 CODE >67:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D92 text5 CODE >71:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+D9A text5 CODE >76:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+136A text4 CODE >79:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+136A text4 CODE >82:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+136C text4 CODE >84:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+1370 text4 CODE >86:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+1372 text4 CODE >90:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+1374 text4 CODE >91:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+1378 text4 CODE >92:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+137A text4 CODE >93:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\pwm.c
+1380 text3 CODE >30:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1380 text3 CODE >36:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1384 text3 CODE >37:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+1388 text3 CODE >38:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+138C text3 CODE >42:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\adc.c
+10A6 text2 CODE >57:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10A6 text2 CODE >59:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10A8 text2 CODE >60:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10AA text2 CODE >61:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10B6 text2 CODE >62:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10B8 text2 CODE >64:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10BE text2 CODE >65:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10CA text2 CODE >66:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10D0 text2 CODE >67:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10DC text2 CODE >68:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10E2 text2 CODE >69:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10E8 text2 CODE >70:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10EE text2 CODE >71:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10F4 text2 CODE >72:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+10FA text2 CODE >73:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+1100 text2 CODE >74:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\lcd.c
+1282 text1 CODE >17:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+1282 text1 CODE >18:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+1286 text1 CODE >19:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+128C text1 CODE >20:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+1292 text1 CODE >21:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+129E text1 CODE >22:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+12A2 text1 CODE >24:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+12AE text1 CODE >25:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+12B2 text1 CODE >26:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+12B8 text1 CODE >27:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\exercicio2.c
+1332 text0 CODE >79:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+1332 text0 CODE >81:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+1336 text0 CODE >82:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+133A text0 CODE >83:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+133E text0 CODE >84:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+1342 text0 CODE >85:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+1346 text0 CODE >86:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+134A text0 CODE >88:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+134E text0 CODE >92:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+1352 text0 CODE >90:C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 2.X\config.c
+1354 cinit CODE >1918:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1354 cinit CODE >1920:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1354 cinit CODE >1923:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1354 cinit CODE >1938:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1358 cinit CODE >1939:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+135A cinit CODE >1940:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+135A cinit CODE >1941:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+135C cinit CODE >1942:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+135E cinit CODE >1943:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1360 cinit CODE >1949:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1360 cinit CODE >1952:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1362 cinit CODE >1953:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1364 cinit CODE >1954:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+1366 cinit CODE >1955:C:\Users\Heitor\AppData\Local\Temp\s6lo.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\Exercicio_2.X.debug.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hspace_1 41 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hspace_2 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_lcd_cmd 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_lcd_dat 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_lcd_str 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___ftdiv@exp 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\Exercicio_2.X.debug.obj
+_PWM1_Init CC6 0 CODE 0 text5 dist/default/debug\Exercicio_2.X.debug.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+PWM1_Set_Duty@d 1C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_atraso_ms 1282 0 CODE 0 text11 dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_atraso_ms 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\Exercicio_2.X.debug.obj
+___sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+_itoa 80A 0 CODE 0 text12 dist/default/debug\Exercicio_2.X.debug.obj
+_loop AFA 0 CODE 0 text6 dist/default/debug\Exercicio_2.X.debug.obj
+_main 1332 0 CODE 0 text0 dist/default/debug\Exercicio_2.X.debug.obj
+start 0 0 CODE 0 init C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+__size_of___aldiv 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___ftdiv 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_itoa 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_loop 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_PWM1_Start 1380 0 CODE 0 text4 dist/default/debug\Exercicio_2.X.debug.obj
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftdiv@f1 C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftdiv@f2 F 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftdiv@f3 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_atraso_ms 1246 0 CODE 0 text11 dist/default/debug\Exercicio_2.X.debug.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug\Exercicio_2.X.debug.obj
+__accesstop 60 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+intlevel0 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+intlevel1 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+intlevel2 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+intlevel3 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_USBDIV$2 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___aldiv@divisor 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\Exercicio_2.X.debug.obj
+?_adc_amostra 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\Exercicio_2.X.debug.obj
+___aldiv@sign 16 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\Exercicio_2.X.debug.obj
+___ftmul@f1 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftmul@f2 1E 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_ADRESH FC4 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_ADRESL FC3 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_lcd_cmd 130E 0 CODE 0 text9 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_lcd_dat 12E4 0 CODE 0 text8 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_lcd_str 10A6 0 CODE 0 text7 dist/default/debug\Exercicio_2.X.debug.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+__size_of_adc_amostra 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_CCPR1L FBE 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___lmul 11B2 0 CODE 0 text23 dist/default/debug\Exercicio_2.X.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\Exercicio_2.X.debug.obj
+___fttol@f1 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\Exercicio_2.X.debug.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/debug\Exercicio_2.X.debug.obj
+___lwmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___aldiv E68 0 CODE 0 text21 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___ftdiv CC6 0 CODE 0 text19 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___ftmul AFA 0 CODE 0 text18 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___fttol A06 0 CODE 0 text17 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___lldiv 102A 0 CODE 0 text24 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___lwdiv 1204 0 CODE 0 text14 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___lwmod 1246 0 CODE 0 text13 dist/default/debug\Exercicio_2.X.debug.obj
+___lwdiv@quotient A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+atraso_ms@i 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_setup 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+itoa@str 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+itoa@val 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___lwtoft 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___lwmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___lldiv@counter 19 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+start_initialization 1354 0 CODE 0 cinit dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\Exercicio_2.X.debug.obj
+_TRISCbits F94 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___aldiv@quotient 17 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+adc_amostra@canal 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___lldiv@dividend D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_lcd_wr 1396 0 CODE 0 text10 dist/default/debug\Exercicio_2.X.debug.obj
+___rparam_used 1 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___fttol@exp1 38 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___fttol@lval 34 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftpack E68 0 CODE 0 text20 dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_PWM1_Start 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___ftpack@arg 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftpack@exp 4 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___ftpack F16 0 CODE 0 text20 dist/default/debug\Exercicio_2.X.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\Exercicio_2.X.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\Exercicio_2.X.debug.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\Exercicio_2.X.debug.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\Exercicio_2.X.debug.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\Exercicio_2.X.debug.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\Exercicio_2.X.debug.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\Exercicio_2.X.debug.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\Exercicio_2.X.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\Exercicio_2.X.debug.obj
+__Hconst 0 0 CONST 0 const dist/default/debug\Exercicio_2.X.debug.obj
+__Hidata 0 0 CODE 0 idata dist/default/debug\Exercicio_2.X.debug.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/debug\Exercicio_2.X.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\Exercicio_2.X.debug.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\Exercicio_2.X.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\Exercicio_2.X.debug.obj
+__Hstack 0 0 STACK 2 stack dist/default/debug\Exercicio_2.X.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext7 0 0 ABS 0 text7 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext8 0 0 ABS 0 text8 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext9 0 0 ABS 0 text9 dist/default/debug\Exercicio_2.X.debug.obj
+___lwdiv@counter C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\Exercicio_2.X.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\Exercicio_2.X.debug.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+lcd_str@i C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_lcd_init 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hcomram 0 0 ABS 0 comram dist/default/debug\Exercicio_2.X.debug.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/debug\Exercicio_2.X.debug.obj
+___lwtoft 130E 0 CODE 0 text16 dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\Exercicio_2.X.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\Exercicio_2.X.debug.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\Exercicio_2.X.debug.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\Exercicio_2.X.debug.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\Exercicio_2.X.debug.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\Exercicio_2.X.debug.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\Exercicio_2.X.debug.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\Exercicio_2.X.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\Exercicio_2.X.debug.obj
+__Lconst 0 0 CONST 0 const dist/default/debug\Exercicio_2.X.debug.obj
+__Lidata 0 0 CODE 0 idata dist/default/debug\Exercicio_2.X.debug.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/debug\Exercicio_2.X.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\Exercicio_2.X.debug.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\Exercicio_2.X.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\Exercicio_2.X.debug.obj
+__Lstack 0 0 STACK 2 stack dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/debug\Exercicio_2.X.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\Exercicio_2.X.debug.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\Exercicio_2.X.debug.obj
+__end_of___lwtoft 1332 0 CODE 0 text16 dist/default/debug\Exercicio_2.X.debug.obj
+_PORTCbits F82 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_PORTEbits F84 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\Exercicio_2.X.debug.obj
+__Hdata 0 0 ABS 0 data dist/default/debug\Exercicio_2.X.debug.obj
+__Hinit 4 0 CODE 0 init dist/default/debug\Exercicio_2.X.debug.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\Exercicio_2.X.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\Exercicio_2.X.debug.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\Exercicio_2.X.debug.obj
+__Htext 0 0 ABS 0 text dist/default/debug\Exercicio_2.X.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\Exercicio_2.X.debug.obj
+__Ldata 0 0 ABS 0 data dist/default/debug\Exercicio_2.X.debug.obj
+__Linit 0 0 CODE 0 init dist/default/debug\Exercicio_2.X.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\Exercicio_2.X.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\Exercicio_2.X.debug.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext 0 0 ABS 0 text dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___lmul 115C 0 CODE 0 text23 dist/default/debug\Exercicio_2.X.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Hintret 0 0 ABS 0 intret dist/default/debug\Exercicio_2.X.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\Exercicio_2.X.debug.obj
+PWM1_Set_Duty@temp 1D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_PR2 FCB 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__S0 30000E 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__S1 41 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__S2 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_val 39 0 COMRAM 1 bssCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+PWM1_Init@f 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_buffer 3B 0 COMRAM 1 bssCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_PLLDIV$2 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\Exercicio_2.X.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\Exercicio_2.X.debug.obj
+_adc_amostra 1102 0 CODE 0 text15 dist/default/debug\Exercicio_2.X.debug.obj
+_lcd_init 10A6 0 CODE 0 text2 dist/default/debug\Exercicio_2.X.debug.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\Exercicio_2.X.debug.obj
+___lldiv@divisor 11 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_lcd_cmd 12E4 0 CODE 0 text9 dist/default/debug\Exercicio_2.X.debug.obj
+_lcd_dat 12BA 0 CODE 0 text8 dist/default/debug\Exercicio_2.X.debug.obj
+_lcd_str 102A 0 CODE 0 text7 dist/default/debug\Exercicio_2.X.debug.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/debug\Exercicio_2.X.debug.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_adc_init 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__activetblptr 2 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\Exercicio_2.X.debug.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_lcd_init 1102 0 CODE 0 text2 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext10 0 0 ABS 0 text10 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext11 0 0 ABS 0 text11 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext12 0 0 ABS 0 text12 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext13 0 0 ABS 0 text13 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext14 0 0 ABS 0 text14 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext15 0 0 ABS 0 text15 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext16 0 0 ABS 0 text16 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext17 0 0 ABS 0 text17 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext18 0 0 ABS 0 text18 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext19 0 0 ABS 0 text19 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext20 0 0 ABS 0 text20 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext21 0 0 ABS 0 text21 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext22 0 0 ABS 0 text22 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext23 0 0 ABS 0 text23 dist/default/debug\Exercicio_2.X.debug.obj
+__Htext24 0 0 ABS 0 text24 dist/default/debug\Exercicio_2.X.debug.obj
+lcd_str@str 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_lcd_wr 138E 0 CODE 0 text10 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext10 138E 0 CODE 0 text10 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext11 1246 0 CODE 0 text11 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext12 80A 0 CODE 0 text12 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext13 1204 0 CODE 0 text13 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext14 11B2 0 CODE 0 text14 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext15 1102 0 CODE 0 text15 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext16 130E 0 CODE 0 text16 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext17 912 0 CODE 0 text17 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext18 A06 0 CODE 0 text18 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext19 BE0 0 CODE 0 text19 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext20 E68 0 CODE 0 text20 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext21 D9C 0 CODE 0 text21 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext22 F16 0 CODE 0 text22 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext23 115C 0 CODE 0 text23 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext24 FA8 0 CODE 0 text24 dist/default/debug\Exercicio_2.X.debug.obj
+___aldiv D9C 0 CODE 0 text21 dist/default/debug\Exercicio_2.X.debug.obj
+___ftdiv BE0 0 CODE 0 text19 dist/default/debug\Exercicio_2.X.debug.obj
+___ftmul A06 0 CODE 0 text18 dist/default/debug\Exercicio_2.X.debug.obj
+___fttol 912 0 CODE 0 text17 dist/default/debug\Exercicio_2.X.debug.obj
+___lldiv FA8 0 CODE 0 text24 dist/default/debug\Exercicio_2.X.debug.obj
+___lwdiv 11B2 0 CODE 0 text14 dist/default/debug\Exercicio_2.X.debug.obj
+___lwmod 1204 0 CODE 0 text13 dist/default/debug\Exercicio_2.X.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\Exercicio_2.X.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/default/debug\Exercicio_2.X.debug.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug\Exercicio_2.X.debug.obj
+?___ftpack 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_PWM1_Set_Duty F16 0 CODE 0 text22 dist/default/debug\Exercicio_2.X.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\Exercicio_2.X.debug.obj
+___lwdiv@divisor 8 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\Exercicio_2.X.debug.obj
+atraso_ms@j1 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+atraso_ms@j2 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+PWM1_Init@temp 21 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___lwtoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+stackhi 7FF 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+stacklo 60 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+__Lintcode 0 0 CODE 0 intcode dist/default/debug\Exercicio_2.X.debug.obj
+__Lintret 0 0 ABS 0 intret dist/default/debug\Exercicio_2.X.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\Exercicio_2.X.debug.obj
+?___lwtoft 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_adc_init 1380 0 CODE 0 text3 dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_lcd_wr 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lspace_0 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lspace_1 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lspace_2 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___ftmul@cntr 28 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__pbssCOMRAM 39 0 COMRAM 1 bssCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftmul@sign 29 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+lcd_cmd@val 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_adc_init 138E 0 CODE 0 text3 dist/default/debug\Exercicio_2.X.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+end_of_initialization 1360 0 CODE 0 cinit dist/default/debug\Exercicio_2.X.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\Exercicio_2.X.debug.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\Exercicio_2.X.debug.obj
+?___aldiv D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___lwdiv@dividend 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+?___ftdiv C 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+?___ftmul 1B 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+?___fttol 2A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+?___lldiv D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+?___lwdiv 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+?___lwmod 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/debug\Exercicio_2.X.debug.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/debug\Exercicio_2.X.debug.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\Exercicio_2.X.debug.obj
+__pcinit 1354 0 CODE 0 cinit dist/default/debug\Exercicio_2.X.debug.obj
+__ptext0 1332 0 CODE 0 text0 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext1 1282 0 CODE 0 text1 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext2 10A6 0 CODE 0 text2 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext3 1380 0 CODE 0 text3 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext4 136A 0 CODE 0 text4 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext5 CC6 0 CODE 0 text5 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext6 AFA 0 CODE 0 text6 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext7 102A 0 CODE 0 text7 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext8 12BA 0 CODE 0 text8 dist/default/debug\Exercicio_2.X.debug.obj
+__ptext9 12E4 0 CODE 0 text9 dist/default/debug\Exercicio_2.X.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/debug\Exercicio_2.X.debug.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/debug\Exercicio_2.X.debug.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\Heitor\AppData\Local\Temp\s6lo.obj
+___aldiv@dividend D 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug\Exercicio_2.X.debug.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\Exercicio_2.X.debug.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/debug\Exercicio_2.X.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___param_bank 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\Exercicio_2.X.debug.obj
+___ftmul@exp 24 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__end_of__initialization 1360 0 CODE 0 cinit dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_PWM1_Set_Duty 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\Exercicio_2.X.debug.obj
+___ftpack@sign 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___lldiv@quotient 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftdiv@cntr 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___ftdiv@sign 1A 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+atraso_ms@valor 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+___aldiv@counter 15 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+lcd_dat@val 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_itoa 912 0 CODE 0 text12 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_loop BE0 0 CODE 0 text6 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_main 1354 0 CODE 0 text0 dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_PWM1_Set_Duty FA8 0 CODE 0 text22 dist/default/debug\Exercicio_2.X.debug.obj
+_PORTD F83 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_TRISA F92 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_TRISB F93 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_TRISC F94 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_TRISD F95 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_TRISE F96 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_setup 12BA 0 CODE 0 text1 dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__HRAM 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hbss 0 0 RAM 1 bss dist/default/debug\Exercicio_2.X.debug.obj
+__Hram 0 0 ABS 0 ram dist/default/debug\Exercicio_2.X.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\Exercicio_2.X.debug.obj
+__LRAM 1 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Lbss 0 0 RAM 1 bss dist/default/debug\Exercicio_2.X.debug.obj
+__Lram 0 0 ABS 0 ram dist/default/debug\Exercicio_2.X.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+_setup 1282 0 CODE 0 text1 dist/default/debug\Exercicio_2.X.debug.obj
+lcd_wr@val 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_adc_amostra 115C 0 CODE 0 text15 dist/default/debug\Exercicio_2.X.debug.obj
+_CCP1CON FBD 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+___fttol@sign1 33 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+_PWM1_Start 136A 0 CODE 0 text4 dist/default/debug\Exercicio_2.X.debug.obj
+__initialization 1354 0 CODE 0 cinit dist/default/debug\Exercicio_2.X.debug.obj
+_T2CONbits FCA 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\Exercicio_2.X.debug.obj
+__end_of_PWM1_Init D9C 0 CODE 0 text5 dist/default/debug\Exercicio_2.X.debug.obj
+__Hsmallconst 80A 0 SMALLCONST 0 smallconst dist/default/debug\Exercicio_2.X.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\Exercicio_2.X.debug.obj
+__size_of_PWM1_Init 0 0 ABS 0 - dist/default/debug\Exercicio_2.X.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\Exercicio_2.X.debug.obj
+__Hintcode 0 0 CODE 0 intcode dist/default/debug\Exercicio_2.X.debug.obj
+___ftmul@f3_as_product 25 0 COMRAM 1 cstackCOMRAM dist/default/debug\Exercicio_2.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text12 0 80A 80A B8C 1
+cstackCOMRAM 1 1 1 40 1
+reset_vec 0 0 0 4 1
+smallconst 0 800 800 A 1
+config 0 300000 300000 E 1

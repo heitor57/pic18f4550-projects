@@ -1,0 +1,506 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/debug\exerc2.X.debug.obj
+cinit CODE 0 7D14 7D14 22 1
+text0 CODE 0 7CF2 7CF2 22 1
+text1 CODE 0 7D5C 7D5C 3A 1
+text2 CODE 0 7D36 7D36 26 1
+text3 CODE 0 7F12 7F12 EE 1
+text4 CODE 0 7E66 7E66 AC 1
+text5 CODE 0 7D96 7D96 3C 1
+text6 CODE 0 7DD2 7DD2 42 1
+text7 CODE 0 7E14 7E14 52 1
+nvCOMRAM COMRAM 1 E E 2 1
+idataCOMRAM CODE 0 7CF0 7CF0 2 1
+cstackCOMRAM COMRAM 1 1 1 D 1
+dataCOMRAM COMRAM 1 10 10 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7CEF 1
+STACK 60-7FF 1
+SMALLCONST 800-7CEF 1
+CODE 4-7CEF 1
+BIGRAM 12-7FF 1
+COMRAM 12-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 800-7CEF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\exerc2.X.debug.obj
+7E14 text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E14 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E1C text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E24 text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E28 text7 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E2A text7 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E30 text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E32 text7 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E36 text7 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E3C text7 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E48 text7 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E50 text7 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E52 text7 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E58 text7 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E5C text7 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E5C text7 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7E64 text7 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+7DD2 text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7DD2 text6 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7DDA text6 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7DDE text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7DE0 text6 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7DE6 text6 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7DE8 text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7DEC text6 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7DF8 text6 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7E00 text6 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7E06 text6 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7E0A text6 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7E0A text6 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7E12 text6 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+7D96 text5 CODE >29:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7D96 text5 CODE >33:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7D9A text5 CODE >35:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DA4 text5 CODE >37:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DA8 text5 CODE >39:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DAA text5 CODE >40:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DAC text5 CODE >41:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DAE text5 CODE >42:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DB0 text5 CODE >43:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DB2 text5 CODE >45:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DB6 text5 CODE >46:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DB8 text5 CODE >47:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DBA text5 CODE >49:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DBE text5 CODE >50:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7DC0 text5 CODE >35:C:\Users\Heitor\MPLABXProjects\exerc2.X\atraso.c
+7E66 text4 CODE >27:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E68 text4 CODE >29:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E6A text4 CODE >32:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E6E text4 CODE >34:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E72 text4 CODE >36:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E76 text4 CODE >38:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E7A text4 CODE >40:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E7E text4 CODE >42:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E82 text4 CODE >44:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E86 text4 CODE >46:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E8A text4 CODE >48:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E8E text4 CODE >50:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E92 text4 CODE >52:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E96 text4 CODE >54:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E9A text4 CODE >56:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7E9E text4 CODE >58:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7EA2 text4 CODE >60:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7EA6 text4 CODE >62:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7EAA text4 CODE >64:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7EAC text4 CODE >65:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7EAE text4 CODE >29:C:\Users\Heitor\MPLABXProjects\exerc2.X\display7s.c
+7F12 text3 CODE >21:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F12 text3 CODE >22:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F42 text3 CODE >23:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F44 text3 CODE >24:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F50 text3 CODE >25:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F52 text3 CODE >26:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F82 text3 CODE >27:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F84 text3 CODE >28:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F90 text3 CODE >29:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7F92 text3 CODE >30:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7FC2 text3 CODE >31:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7FC4 text3 CODE >32:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7FD0 text3 CODE >33:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7FD2 text3 CODE >34:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7FEE text3 CODE >35:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7FF0 text3 CODE >36:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7FFC text3 CODE >37:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7FFE text3 CODE >38:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7D36 text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+7D36 text2 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+7D42 text2 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+7D4A text2 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+7D52 text2 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul16.c
+7D5C text1 CODE >16:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7D5C text1 CODE >17:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7D60 text1 CODE >18:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7D94 text1 CODE >19:C:\Users\Heitor\MPLABXProjects\exerc2.X\exerc2.c
+7CF2 text0 CODE >80:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7CF2 text0 CODE >82:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7CF6 text0 CODE >83:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7CFA text0 CODE >84:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7CFE text0 CODE >85:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7D02 text0 CODE >86:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7D06 text0 CODE >87:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7D0A text0 CODE >88:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7D0E text0 CODE >91:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7D12 text0 CODE >89:C:\Users\Heitor\MPLABXProjects\exerc2.X\config.c
+7D14 cinit CODE >847:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D14 cinit CODE >849:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D14 cinit CODE >852:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D14 cinit CODE >867:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D16 cinit CODE >868:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D18 cinit CODE >869:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D1A cinit CODE >870:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D1C cinit CODE >871:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D1E cinit CODE >872:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D20 cinit CODE >873:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D22 cinit CODE >874:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D26 cinit CODE >875:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D28 cinit CODE >876:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D2C cinit CODE >882:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D2C cinit CODE >885:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D2E cinit CODE >886:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D30 cinit CODE >887:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+7D32 cinit CODE >888:C:\Users\Heitor\AppData\Local\Temp\sb9g.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_n 10 0 COMRAM 1 dataCOMRAM dist/default/debug\exerc2.X.debug.obj
+_r E 0 COMRAM 1 nvCOMRAM dist/default/debug\exerc2.X.debug.obj
+___lwmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\exerc2.X.debug.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Hspace_1 12 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Hspace_2 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/debug\exerc2.X.debug.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\exerc2.X.debug.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__end_of_atraso_ms 7DD2 0 CODE 0 text5 dist/default/debug\exerc2.X.debug.obj
+__size_of_atraso_ms 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\exerc2.X.debug.obj
+___sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+_loop 7F12 0 CODE 0 text3 dist/default/debug\exerc2.X.debug.obj
+_main 7CF2 0 CODE 0 text0 dist/default/debug\exerc2.X.debug.obj
+start 0 0 CODE 0 init C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+__size_of_loop 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+_atraso_ms 7D96 0 CODE 0 text5 dist/default/debug\exerc2.X.debug.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/debug\exerc2.X.debug.obj
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/debug\exerc2.X.debug.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\exerc2.X.debug.obj
+__accesstop 60 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+intlevel0 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+intlevel1 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+intlevel2 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+intlevel3 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+__CFG_USBDIV$2 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\exerc2.X.debug.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/debug\exerc2.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/debug\exerc2.X.debug.obj
+__pidataCOMRAM 7CF0 0 CODE 0 idataCOMRAM dist/default/debug\exerc2.X.debug.obj
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/debug\exerc2.X.debug.obj
+__end_of___wmul 7D5C 0 CODE 0 text2 dist/default/debug\exerc2.X.debug.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\exerc2.X.debug.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/debug\exerc2.X.debug.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/debug\exerc2.X.debug.obj
+___lwmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__end_of___lwdiv 7E66 0 CODE 0 text7 dist/default/debug\exerc2.X.debug.obj
+__end_of___lwmod 7E14 0 CODE 0 text6 dist/default/debug\exerc2.X.debug.obj
+___lwdiv@quotient B 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\exerc2.X.debug.obj
+atraso_ms@i 3 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__size_of_setup 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/debug\exerc2.X.debug.obj
+___lwmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/debug\exerc2.X.debug.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+start_initialization 7D14 0 CODE 0 cinit dist/default/debug\exerc2.X.debug.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/debug\exerc2.X.debug.obj
+___rparam_used 1 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/debug\exerc2.X.debug.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/debug\exerc2.X.debug.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/debug\exerc2.X.debug.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/debug\exerc2.X.debug.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/debug\exerc2.X.debug.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/debug\exerc2.X.debug.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/debug\exerc2.X.debug.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/debug\exerc2.X.debug.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/debug\exerc2.X.debug.obj
+__Hconst 0 0 CONST 0 const dist/default/debug\exerc2.X.debug.obj
+__Hidata 0 0 CODE 0 idata dist/default/debug\exerc2.X.debug.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/debug\exerc2.X.debug.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/debug\exerc2.X.debug.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/debug\exerc2.X.debug.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/debug\exerc2.X.debug.obj
+__Hstack 0 0 STACK 2 stack dist/default/debug\exerc2.X.debug.obj
+__Htext0 0 0 ABS 0 text0 dist/default/debug\exerc2.X.debug.obj
+__Htext1 0 0 ABS 0 text1 dist/default/debug\exerc2.X.debug.obj
+__Htext2 0 0 ABS 0 text2 dist/default/debug\exerc2.X.debug.obj
+__Htext3 0 0 ABS 0 text3 dist/default/debug\exerc2.X.debug.obj
+__Htext4 0 0 ABS 0 text4 dist/default/debug\exerc2.X.debug.obj
+__Htext5 0 0 ABS 0 text5 dist/default/debug\exerc2.X.debug.obj
+__Htext6 0 0 ABS 0 text6 dist/default/debug\exerc2.X.debug.obj
+__Htext7 0 0 ABS 0 text7 dist/default/debug\exerc2.X.debug.obj
+___lwdiv@counter D 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\exerc2.X.debug.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/debug\exerc2.X.debug.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+__Hcomram 0 0 ABS 0 comram dist/default/debug\exerc2.X.debug.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/debug\exerc2.X.debug.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/debug\exerc2.X.debug.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/debug\exerc2.X.debug.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/debug\exerc2.X.debug.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/debug\exerc2.X.debug.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/debug\exerc2.X.debug.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/debug\exerc2.X.debug.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/debug\exerc2.X.debug.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/debug\exerc2.X.debug.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/debug\exerc2.X.debug.obj
+__Lconst 0 0 CONST 0 const dist/default/debug\exerc2.X.debug.obj
+__Lidata 0 0 CODE 0 idata dist/default/debug\exerc2.X.debug.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/debug\exerc2.X.debug.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/debug\exerc2.X.debug.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/debug\exerc2.X.debug.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/debug\exerc2.X.debug.obj
+__Lstack 0 0 STACK 2 stack dist/default/debug\exerc2.X.debug.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/debug\exerc2.X.debug.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/debug\exerc2.X.debug.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/debug\exerc2.X.debug.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/debug\exerc2.X.debug.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/debug\exerc2.X.debug.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/debug\exerc2.X.debug.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/debug\exerc2.X.debug.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/debug\exerc2.X.debug.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/debug\exerc2.X.debug.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/debug\exerc2.X.debug.obj
+_PORTAbits F80 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/debug\exerc2.X.debug.obj
+__Hdata 0 0 ABS 0 data dist/default/debug\exerc2.X.debug.obj
+__Hinit 4 0 CODE 0 init dist/default/debug\exerc2.X.debug.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/debug\exerc2.X.debug.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/debug\exerc2.X.debug.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/debug\exerc2.X.debug.obj
+__Htext 0 0 ABS 0 text dist/default/debug\exerc2.X.debug.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/debug\exerc2.X.debug.obj
+__Ldata 0 0 ABS 0 data dist/default/debug\exerc2.X.debug.obj
+__Linit 0 0 CODE 0 init dist/default/debug\exerc2.X.debug.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/debug\exerc2.X.debug.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/debug\exerc2.X.debug.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/debug\exerc2.X.debug.obj
+__Ltext 0 0 ABS 0 text dist/default/debug\exerc2.X.debug.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+___wmul 7D36 0 CODE 0 text2 dist/default/debug\exerc2.X.debug.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Hintret 0 0 ABS 0 intret dist/default/debug\exerc2.X.debug.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/debug\exerc2.X.debug.obj
+__S0 30000E 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__S1 12 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__S2 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__pnvCOMRAM E 0 COMRAM 1 nvCOMRAM dist/default/debug\exerc2.X.debug.obj
+__CFG_PLLDIV$2 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\exerc2.X.debug.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/debug\exerc2.X.debug.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/debug\exerc2.X.debug.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/debug\exerc2.X.debug.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/debug\exerc2.X.debug.obj
+__activetblptr 2 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/debug\exerc2.X.debug.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+___lwdiv 7E14 0 CODE 0 text7 dist/default/debug\exerc2.X.debug.obj
+___lwmod 7DD2 0 CODE 0 text6 dist/default/debug\exerc2.X.debug.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/debug\exerc2.X.debug.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/debug\exerc2.X.debug.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Lcomram 0 0 ABS 0 comram dist/default/debug\exerc2.X.debug.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/debug\exerc2.X.debug.obj
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/debug\exerc2.X.debug.obj
+___lwdiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/debug\exerc2.X.debug.obj
+atraso_ms@j1 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+atraso_ms@j2 6 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+stackhi 7FF 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+stacklo 60 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+__Lintcode 0 0 CODE 0 intcode dist/default/debug\exerc2.X.debug.obj
+__Lintret 0 0 ABS 0 intret dist/default/debug\exerc2.X.debug.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/debug\exerc2.X.debug.obj
+__end_of_display7s 7F12 0 CODE 0 text4 dist/default/debug\exerc2.X.debug.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__size_of_display7s 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Lspace_0 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Lspace_1 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Lspace_2 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+end_of_initialization 7D2C 0 CODE 0 cinit dist/default/debug\exerc2.X.debug.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/debug\exerc2.X.debug.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/debug\exerc2.X.debug.obj
+_display7s 7E66 0 CODE 0 text4 dist/default/debug\exerc2.X.debug.obj
+___lwdiv@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+?___lwdiv 7 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+?___lwmod 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/debug\exerc2.X.debug.obj
+display7s@v 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/debug\exerc2.X.debug.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/debug\exerc2.X.debug.obj
+__pcinit 7D14 0 CODE 0 cinit dist/default/debug\exerc2.X.debug.obj
+__ptext0 7CF2 0 CODE 0 text0 dist/default/debug\exerc2.X.debug.obj
+__ptext1 7D5C 0 CODE 0 text1 dist/default/debug\exerc2.X.debug.obj
+__ptext2 7D36 0 CODE 0 text2 dist/default/debug\exerc2.X.debug.obj
+__ptext3 7F12 0 CODE 0 text3 dist/default/debug\exerc2.X.debug.obj
+__ptext4 7E66 0 CODE 0 text4 dist/default/debug\exerc2.X.debug.obj
+__ptext5 7D96 0 CODE 0 text5 dist/default/debug\exerc2.X.debug.obj
+__ptext6 7DD2 0 CODE 0 text6 dist/default/debug\exerc2.X.debug.obj
+__ptext7 7E14 0 CODE 0 text7 dist/default/debug\exerc2.X.debug.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/debug\exerc2.X.debug.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\Heitor\AppData\Local\Temp\sb9g.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/debug\exerc2.X.debug.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/debug\exerc2.X.debug.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/debug\exerc2.X.debug.obj
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+___param_bank 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/debug\exerc2.X.debug.obj
+__end_of__initialization 7D2C 0 CODE 0 cinit dist/default/debug\exerc2.X.debug.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/debug\exerc2.X.debug.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/debug\exerc2.X.debug.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+atraso_ms@valor 1 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__end_of_loop 8000 0 CODE 0 text3 dist/default/debug\exerc2.X.debug.obj
+__end_of_main 7D14 0 CODE 0 text0 dist/default/debug\exerc2.X.debug.obj
+_PORTD F83 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+_TRISA F92 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+_TRISB F93 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+_TRISC F94 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+_TRISD F95 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+_TRISE F96 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__end_of_setup 7D96 0 CODE 0 text1 dist/default/debug\exerc2.X.debug.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__HRAM 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Hbss 0 0 RAM 1 bss dist/default/debug\exerc2.X.debug.obj
+__Hram 0 0 ABS 0 ram dist/default/debug\exerc2.X.debug.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/debug\exerc2.X.debug.obj
+__LRAM 1 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__Lbss 0 0 RAM 1 bss dist/default/debug\exerc2.X.debug.obj
+__Lram 0 0 ABS 0 ram dist/default/debug\exerc2.X.debug.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/debug\exerc2.X.debug.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/debug\exerc2.X.debug.obj
+_setup 7D5C 0 CODE 0 text1 dist/default/debug\exerc2.X.debug.obj
+__initialization 7D14 0 CODE 0 cinit dist/default/debug\exerc2.X.debug.obj
+__pdataCOMRAM 10 0 COMRAM 1 dataCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/debug\exerc2.X.debug.obj
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/debug\exerc2.X.debug.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/debug\exerc2.X.debug.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/debug\exerc2.X.debug.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/debug\exerc2.X.debug.obj
+__Hintcode 0 0 CODE 0 intcode dist/default/debug\exerc2.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7D14 7D14 22 1
+idloc 0 200000 200000 8 1
+text0 0 7CF2 7CF2 22 1
+text1 0 7D5C 7D5C 3A 1
+text2 0 7D36 7D36 26 1
+text3 0 7F12 7F12 EE 1
+text4 0 7E66 7E66 AC 1
+text5 0 7D96 7D96 3C 1
+text6 0 7DD2 7DD2 42 1
+text7 0 7E14 7E14 52 1
+idataCOMRAM 0 7CF0 7CF0 2 1
+cstackCOMRAM 1 1 1 11 1
+reset_vec 0 0 0 4 1
+config 0 300000 300000 E 1

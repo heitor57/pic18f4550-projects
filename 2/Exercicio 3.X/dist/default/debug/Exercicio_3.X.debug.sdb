@@ -1,0 +1,353 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"31 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\atraso.c
+[v _atraso_ms atraso_ms `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"79 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\config.c
+[v _main main `(v  1 e 1 0 ]
+"35 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\exercicio3.c
+[v _setup setup `(v  1 e 1 0 ]
+"46
+[v _etapa etapa `(v  1 e 1 0 ]
+"51
+[v _mostravol mostravol `(ui  1 e 2 0 ]
+"64
+[v _mostratemp mostratemp `(ui  1 e 2 0 ]
+"77
+[v _loop loop `(v  1 e 1 0 ]
+"26 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\itoa.c
+[v _itoa itoa `(*.39uc  1 e 2 0 ]
+"30 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\lcd.c
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+"35
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+"46
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+"57
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"76
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+"35 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\serial.c
+[v _serial_init serial_init `(v  1 e 1 0 ]
+"60
+[v _serial_tx serial_tx `(v  1 e 1 0 ]
+"77
+[v _serial_rx serial_rx `(uc  1 e 1 0 ]
+"2668 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic18f4550.h
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S141 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 RDPU 1 0 :1:7 
+]
+"2830
+[s S148 . 1 `uc 1 CK1SPP 1 0 :1:0 
+`uc 1 CK2SPP 1 0 :1:1 
+`uc 1 OESPP 1 0 :1:2 
+]
+[s S152 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 CCP2E 1 0 :1:7 
+]
+[s S159 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 PA2E 1 0 :1:7 
+]
+[s S166 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PB2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RE7 1 0 :1:7 
+]
+[u S171 . 1 `S141 1 . 1 0 `S148 1 . 1 0 `S152 1 . 1 0 `S159 1 . 1 0 `S166 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES171  1 e 1 @3972 ]
+"3383
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3580
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"3801
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S21 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3829
+[s S28 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S35 . 1 `S21 1 . 1 0 `S28 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES35  1 e 1 @3988 ]
+"3954
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4175
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S346 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4441
+[s S355 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S361 . 1 `S346 1 . 1 0 `S355 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES361  1 e 1 @3998 ]
+[s S290 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4917
+[s S299 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S302 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S305 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S308 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S311 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S313 . 1 `S290 1 . 1 0 `S299 1 . 1 0 `S302 1 . 1 0 `S305 1 . 1 0 `S308 1 . 1 0 `S311 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES313  1 e 1 @4011 ]
+[s S238 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5124
+[s S247 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S256 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S259 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S261 . 1 `S238 1 . 1 0 `S247 1 . 1 0 `S256 1 . 1 0 `S259 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES261  1 e 1 @4012 ]
+"5340
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5351
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5362
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"6497
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"44 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\exercicio3.c
+[v _valor valor `uc  1 e 1 0 ]
+[v _buffer buffer `[6]uc  1 e 6 0 ]
+"45
+[v _volume_maximo volume_maximo `ui  1 e 2 0 ]
+"79 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\config.c
+[v _main main `(v  1 e 1 0 ]
+{
+"94
+} 0
+"35 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\exercicio3.c
+[v _setup setup `(v  1 e 1 0 ]
+{
+"43
+} 0
+"35 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\serial.c
+[v _serial_init serial_init `(v  1 e 1 0 ]
+{
+"56
+} 0
+"57 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\lcd.c
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"74
+} 0
+"77 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\exercicio3.c
+[v _loop loop `(v  1 e 1 0 ]
+{
+"138
+} 0
+"51
+[v _mostravol mostravol `(ui  1 e 2 0 ]
+{
+"53
+[v mostravol@valori valori `ui  1 a 2 27 ]
+"52
+[v mostravol@valorl valorl `uc  1 a 1 26 ]
+[v mostravol@valorh valorh `uc  1 a 1 25 ]
+"62
+} 0
+"64
+[v _mostratemp mostratemp `(ui  1 e 2 0 ]
+{
+"66
+[v mostratemp@valori valori `ui  1 a 2 27 ]
+"65
+[v mostratemp@valorl valorl `uc  1 a 1 26 ]
+[v mostratemp@valorh valorh `uc  1 a 1 25 ]
+"76
+} 0
+"60 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\serial.c
+[v _serial_tx serial_tx `(v  1 e 1 0 ]
+{
+[v serial_tx@val val `uc  1 a 1 wreg ]
+[v serial_tx@val val `uc  1 a 1 wreg ]
+"62
+[v serial_tx@val val `uc  1 a 1 0 ]
+"64
+} 0
+"77
+[v _serial_rx serial_rx `(uc  1 e 1 0 ]
+{
+"79
+[v serial_rx@to to `ui  1 a 2 8 ]
+"77
+[v serial_rx@timeout timeout `ui  1 p 2 6 ]
+"96
+} 0
+"26 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\itoa.c
+[v _itoa itoa `(*.39uc  1 e 2 0 ]
+{
+[v itoa@val val `ui  1 p 2 12 ]
+[v itoa@str str `*.39uc  1 p 2 14 ]
+"36
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 11 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 5 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 7 ]
+"31
+} 0
+"46 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\exercicio3.c
+[v _etapa etapa `(v  1 e 1 0 ]
+{
+[v etapa@num num `i  1 p 2 21 ]
+"50
+} 0
+"76 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\lcd.c
+[v _lcd_str lcd_str `(v  1 e 1 0 ]
+{
+"78
+[v lcd_str@i i `uc  1 a 1 20 ]
+"76
+[v lcd_str@str str `*.35Cuc  1 p 2 16 ]
+"85
+} 0
+"46
+[v _lcd_dat lcd_dat `(v  1 e 1 0 ]
+{
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+[v lcd_dat@val val `uc  1 a 1 wreg ]
+"48
+[v lcd_dat@val val `uc  1 a 1 6 ]
+"55
+} 0
+"35
+[v _lcd_cmd lcd_cmd `(v  1 e 1 0 ]
+{
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+[v lcd_cmd@val val `uc  1 a 1 wreg ]
+"37
+[v lcd_cmd@val val `uc  1 a 1 6 ]
+"44
+} 0
+"30
+[v _lcd_wr lcd_wr `(v  1 e 1 0 ]
+{
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+[v lcd_wr@val val `uc  1 a 1 wreg ]
+"32
+[v lcd_wr@val val `uc  1 a 1 0 ]
+"33
+} 0
+"31 C:\Users\Heitor\Documents\Escola\3 ano\SDM\Lista 2 bimestre SDM\Exercicio 3.X\atraso.c
+[v _atraso_ms atraso_ms `(v  1 e 1 0 ]
+{
+"33
+[v atraso_ms@i i `ui  1 a 2 2 ]
+"35
+[v atraso_ms@j2 j2 `VEuc  1 a 1 5 ]
+"34
+[v atraso_ms@j1 j1 `VEuc  1 a 1 4 ]
+"31
+[v atraso_ms@valor valor `ui  1 p 2 0 ]
+"57
+} 0

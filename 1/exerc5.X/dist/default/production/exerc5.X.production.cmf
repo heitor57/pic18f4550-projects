@@ -1,0 +1,582 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\exerc5.X.production.obj
+cinit CODE 0 3C6 3C6 10 1
+intcode_body CODE 0 182 182 9E 1
+text0 CODE 0 386 386 22 1
+text1 CODE 0 350 350 36 1
+text2 CODE 0 3D6 3D6 C 1
+text3 CODE 0 12 12 C4 1
+text4 CODE 0 3A8 3A8 1E 1
+text5 CODE 0 D6 D6 AC 1
+text6 CODE 0 314 314 3C 1
+text7 CODE 0 2A4 2A4 70 1
+text8 CODE 0 220 220 84 1
+nvCOMRAM COMRAM 1 17 17 1 1
+cstackCOMRAM COMRAM 1 1 1 16 1
+temp COMRAM 1 19 19 1 1
+intcode CODE 0 8 8 6 1
+bssCOMRAM COMRAM 1 18 18 1 1
+$C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 3E2-7FFF 1
+STACK 60-7FF 1
+SMALLCONST 800-7FFF 1
+CODE 4-7 1
+CODE 3E2-7FFF 1
+BIGRAM 1A-7FF 1
+COMRAM 1A-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 800-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\exerc5.X.production.obj
+8 intcode CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+8 intcode CODE >15:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+182 intcode_body CODE >15:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1BC intcode_body CODE >16:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1C0 intcode_body CODE >17:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1C4 intcode_body CODE >18:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1CC intcode_body CODE >19:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1CE intcode_body CODE >20:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1D0 intcode_body CODE >21:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1D2 intcode_body CODE >23:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1D6 intcode_body CODE >24:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1E2 intcode_body CODE >25:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+1E4 intcode_body CODE >26:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+220 text8 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+220 text8 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+224 text8 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+228 text8 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+230 text8 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+234 text8 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+238 text8 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+240 text8 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+244 text8 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+24C text8 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+254 text8 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+258 text8 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+25A text8 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+260 text8 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+262 text8 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+266 text8 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+26C text8 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+278 text8 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+280 text8 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+282 text8 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+288 text8 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+28C text8 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+292 text8 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+29A text8 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awdiv.c
+2A4 text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2A4 text7 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2A8 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2AC text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2B4 text7 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2B8 text7 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2BC text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2C4 text7 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2CC text7 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2D0 text7 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2D2 text7 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2D8 text7 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2DA text7 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2DE text7 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2EA text7 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2F2 text7 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2F8 text7 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+2FC text7 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+302 text7 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+30A text7 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awmod.c
+314 text6 CODE >29:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+314 text6 CODE >33:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+318 text6 CODE >35:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+322 text6 CODE >37:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+326 text6 CODE >39:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+328 text6 CODE >40:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+32A text6 CODE >41:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+32C text6 CODE >42:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+32E text6 CODE >43:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+330 text6 CODE >45:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+334 text6 CODE >46:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+336 text6 CODE >47:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+338 text6 CODE >49:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+33C text6 CODE >50:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+33E text6 CODE >35:C:\Users\Heitor\MPLABXProjects\exerc5.X\atraso.c
+D6 text5 CODE >27:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+D8 text5 CODE >29:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+DA text5 CODE >32:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+DE text5 CODE >34:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+E2 text5 CODE >36:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+E6 text5 CODE >38:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+EA text5 CODE >40:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+EE text5 CODE >42:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+F2 text5 CODE >44:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+F6 text5 CODE >46:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+FA text5 CODE >48:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+FE text5 CODE >50:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+102 text5 CODE >52:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+106 text5 CODE >54:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+10A text5 CODE >56:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+10E text5 CODE >58:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+112 text5 CODE >60:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+116 text5 CODE >62:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+11A text5 CODE >64:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+11C text5 CODE >65:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+11E text5 CODE >29:C:\Users\Heitor\MPLABXProjects\exerc5.X\display7s.c
+3A8 text4 CODE >37:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3AA text4 CODE >39:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3AE text4 CODE >40:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3B2 text4 CODE >42:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3B4 text4 CODE >44:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3B8 text4 CODE >45:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3BC text4 CODE >47:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3BE text4 CODE >48:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3C2 text4 CODE >50:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3C4 text4 CODE >53:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+12 text3 CODE >51:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+12 text3 CODE >52:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+2C text3 CODE >53:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+2E text3 CODE >54:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+3A text3 CODE >55:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+3C text3 CODE >56:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+56 text3 CODE >57:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+58 text3 CODE >58:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+64 text3 CODE >59:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+66 text3 CODE >62:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+68 text3 CODE >63:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+74 text3 CODE >64:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+78 text3 CODE >65:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+7C text3 CODE >62:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+82 text3 CODE >69:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+8E text3 CODE >70:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+92 text3 CODE >71:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+96 text3 CODE >68:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+9A text3 CODE >74:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+9E text3 CODE >75:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+AA text3 CODE >76:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+AE text3 CODE >77:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+B2 text3 CODE >80:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+B6 text3 CODE >81:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+C2 text3 CODE >82:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+C6 text3 CODE >83:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+CA text3 CODE >86:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+D4 text3 CODE >87:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+3D6 text2 CODE >29:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3D8 text2 CODE >31:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3DC text2 CODE >32:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+3DE text2 CODE >33:C:\Users\Heitor\MPLABXProjects\exerc5.X\eeprom.c
+350 text1 CODE >27:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+350 text1 CODE >30:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+352 text1 CODE >31:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+358 text1 CODE >32:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+35A text1 CODE >33:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+35C text1 CODE >34:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+360 text1 CODE >35:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+364 text1 CODE >37:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+366 text1 CODE >38:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+368 text1 CODE >39:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+36A text1 CODE >40:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+36C text1 CODE >42:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+36E text1 CODE >43:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+370 text1 CODE >44:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+374 text1 CODE >45:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+376 text1 CODE >46:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+378 text1 CODE >47:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+37A text1 CODE >48:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+37C text1 CODE >49:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+384 text1 CODE >50:C:\Users\Heitor\MPLABXProjects\exerc5.X\exerc5.c
+386 text0 CODE >80:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+386 text0 CODE >82:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+38A text0 CODE >83:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+38E text0 CODE >84:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+392 text0 CODE >85:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+396 text0 CODE >86:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+39A text0 CODE >87:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+39E text0 CODE >88:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+3A2 text0 CODE >91:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+3A6 text0 CODE >89:C:\Users\Heitor\MPLABXProjects\exerc5.X\config.c
+3C6 cinit CODE >1208:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3C6 cinit CODE >1210:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3C6 cinit CODE >1213:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3C6 cinit CODE >1225:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3C8 cinit CODE >1231:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3C8 cinit CODE >1233:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3CA cinit CODE >1234:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3CC cinit CODE >1236:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3CE cinit CODE >1237:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3D0 cinit CODE >1238:C:\Users\Heitor\AppData\Local\Temp\s90k.
+3D2 cinit CODE >1239:C:\Users\Heitor\AppData\Local\Temp\s90k.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter 13 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\exerc5.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Hspace_1 1A 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\exerc5.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\exerc5.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__end_of_atraso_ms 350 0 CODE 0 text6 dist/default/production\exerc5.X.production.obj
+__size_of_atraso_ms 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\exerc5.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+_loop 12 0 CODE 0 text3 dist/default/production\exerc5.X.production.obj
+_main 386 0 CODE 0 text0 dist/default/production\exerc5.X.production.obj
+btemp 19 0 COMRAM 1 temp dist/default/production\exerc5.X.production.obj
+start E 0 CODE 0 init C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__size_of_loop 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\exerc5.X.production.obj
+_atraso_ms 314 0 CODE 0 text6 dist/default/production\exerc5.X.production.obj
+__Hpowerup E 0 CODE 0 powerup dist/default/production\exerc5.X.production.obj
+___awmod@sign 14 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+_T0CONbits FD5 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\exerc5.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+intlevel0 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+intlevel1 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+intlevel2 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+intlevel3 0 0 CODE 0 text C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\exerc5.X.production.obj
+__CFG_USBDIV$2 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\exerc5.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\exerc5.X.production.obj
+___awdiv@sign 14 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\exerc5.X.production.obj
+e2prom_r@addr F 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+___awdiv@dividend F 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+_EECON1bits FA6 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+e2prom_w@addr 10 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\exerc5.X.production.obj
+_EECON2 FA7 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_EEDATA FA8 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\exerc5.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\exerc5.X.production.obj
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\exerc5.X.production.obj
+___awdiv@divisor 11 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__end_of___awdiv 2A4 0 CODE 0 text8 dist/default/production\exerc5.X.production.obj
+__end_of___awmod 314 0 CODE 0 text7 dist/default/production\exerc5.X.production.obj
+atraso_ms@i 11 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__size_of_setup 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\exerc5.X.production.obj
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\exerc5.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+start_initialization 3C6 0 CODE 0 cinit dist/default/production\exerc5.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\exerc5.X.production.obj
+_TRISAbits F92 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TRISBbits F93 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_STVREN$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__size_of_e2prom_r 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__size_of_e2prom_w 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TMR0ON 7EAF 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\exerc5.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\exerc5.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\exerc5.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\exerc5.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\exerc5.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\exerc5.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\exerc5.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\exerc5.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\exerc5.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\exerc5.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\exerc5.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\exerc5.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\exerc5.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\exerc5.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\exerc5.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\exerc5.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\exerc5.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\exerc5.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\exerc5.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\exerc5.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\exerc5.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\exerc5.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\exerc5.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\exerc5.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\exerc5.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\exerc5.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\exerc5.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\exerc5.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\exerc5.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\exerc5.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\exerc5.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\exerc5.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\exerc5.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\exerc5.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\exerc5.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\exerc5.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\exerc5.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\exerc5.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\exerc5.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\exerc5.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\exerc5.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\exerc5.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\exerc5.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\exerc5.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\exerc5.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\exerc5.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\exerc5.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\exerc5.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\exerc5.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\exerc5.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\exerc5.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\exerc5.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\exerc5.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\exerc5.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\exerc5.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\exerc5.X.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_PORTBbits F81 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+e2prom_w@val F 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\exerc5.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\exerc5.X.production.obj
+__Hinit 12 0 CODE 0 init dist/default/production\exerc5.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\exerc5.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\exerc5.X.production.obj
+__Htemp 1A 0 COMRAM 1 temp dist/default/production\exerc5.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\exerc5.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\exerc5.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\exerc5.X.production.obj
+__Linit E 0 CODE 0 init dist/default/production\exerc5.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\exerc5.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\exerc5.X.production.obj
+__Ltemp 19 0 COMRAM 1 temp dist/default/production\exerc5.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\exerc5.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_e2prom_r 3D6 0 CODE 0 text2 dist/default/production\exerc5.X.production.obj
+_e2prom_w 3A8 0 CODE 0 text4 dist/default/production\exerc5.X.production.obj
+int$flags 19 0 COMRAM 1 temp dist/default/production\exerc5.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\exerc5.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\exerc5.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__S1 1A 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_isr 8 0 CODE 0 intcode dist/default/production\exerc5.X.production.obj
+__CFG_VREGEN$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__end_of_e2prom_r 3E2 0 CODE 0 text2 dist/default/production\exerc5.X.production.obj
+__end_of_e2prom_w 3C6 0 CODE 0 text4 dist/default/production\exerc5.X.production.obj
+__pnvCOMRAM 17 0 COMRAM 1 nvCOMRAM dist/default/production\exerc5.X.production.obj
+__CFG_PLLDIV$2 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\exerc5.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\exerc5.X.production.obj
+__end_of_isr 220 0 CODE 0 intcode_body dist/default/production\exerc5.X.production.obj
+int_func 182 0 CODE 0 intcode_body dist/default/production\exerc5.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\exerc5.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\exerc5.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\exerc5.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\exerc5.X.production.obj
+___awmod@counter 13 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+___awdiv 220 0 CODE 0 text8 dist/default/production\exerc5.X.production.obj
+___awmod 2A4 0 CODE 0 text7 dist/default/production\exerc5.X.production.obj
+__pintcode_body 182 0 CODE 0 intcode_body dist/default/production\exerc5.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\exerc5.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\exerc5.X.production.obj
+__CFG_BOR$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\exerc5.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\exerc5.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\exerc5.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\exerc5.X.production.obj
+atraso_ms@j1 13 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+atraso_ms@j2 14 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__CFG_CCP2MX$ON 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+stackhi 7FF 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+stacklo 60 0 ABS 0 - C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\exerc5.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\exerc5.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\exerc5.X.production.obj
+__end_of_display7s 182 0 CODE 0 text5 dist/default/production\exerc5.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__size_of_display7s 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_ICPRT$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__pbssCOMRAM 18 0 COMRAM 1 bssCOMRAM dist/default/production\exerc5.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+end_of_initialization 3C8 0 CODE 0 cinit dist/default/production\exerc5.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\exerc5.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\exerc5.X.production.obj
+___awdiv@quotient 15 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+_display7s D6 0 CODE 0 text5 dist/default/production\exerc5.X.production.obj
+?___awdiv F 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+?___awmod F 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\exerc5.X.production.obj
+display7s@v F 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+___awmod@dividend F 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\exerc5.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\exerc5.X.production.obj
+__pcinit 3C6 0 CODE 0 cinit dist/default/production\exerc5.X.production.obj
+__ptext0 386 0 CODE 0 text0 dist/default/production\exerc5.X.production.obj
+__ptext1 350 0 CODE 0 text1 dist/default/production\exerc5.X.production.obj
+__ptext2 3D6 0 CODE 0 text2 dist/default/production\exerc5.X.production.obj
+__ptext3 12 0 CODE 0 text3 dist/default/production\exerc5.X.production.obj
+__ptext4 3A8 0 CODE 0 text4 dist/default/production\exerc5.X.production.obj
+__ptext5 D6 0 CODE 0 text5 dist/default/production\exerc5.X.production.obj
+__ptext6 314 0 CODE 0 text6 dist/default/production\exerc5.X.production.obj
+__ptext7 2A4 0 CODE 0 text7 dist/default/production\exerc5.X.production.obj
+__ptext8 220 0 CODE 0 text8 dist/default/production\exerc5.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\exerc5.X.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\Heitor\AppData\Local\Temp\s90k.obj
+__Lpowerup E 0 CODE 0 powerup dist/default/production\exerc5.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\exerc5.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\exerc5.X.production.obj
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\exerc5.X.production.obj
+__end_of__initialization 3C8 0 CODE 0 cinit dist/default/production\exerc5.X.production.obj
+___awmod@divisor 11 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\exerc5.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\exerc5.X.production.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+atraso_ms@valor F 0 COMRAM 1 cstackCOMRAM dist/default/production\exerc5.X.production.obj
+__end_of_loop D6 0 CODE 0 text3 dist/default/production\exerc5.X.production.obj
+__end_of_main 3A8 0 CODE 0 text0 dist/default/production\exerc5.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\exerc5.X.production.obj
+_EEADR FA9 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_PORTD F83 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TMR0H FD7 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TMR0L FD6 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_TRISE F96 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__end_of_setup 386 0 CODE 0 text1 dist/default/production\exerc5.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\exerc5.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\exerc5.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\exerc5.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\exerc5.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\exerc5.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\exerc5.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_nivel 17 0 COMRAM 1 nvCOMRAM dist/default/production\exerc5.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_setup 350 0 CODE 0 text1 dist/default/production\exerc5.X.production.obj
+__size_of_isr 0 0 ABS 0 - dist/default/production\exerc5.X.production.obj
+_contador 18 0 COMRAM 1 bssCOMRAM dist/default/production\exerc5.X.production.obj
+__initialization 3C6 0 CODE 0 cinit dist/default/production\exerc5.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\exerc5.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\exerc5.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\exerc5.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\exerc5.X.production.obj
+__Hintcode E 0 CODE 0 intcode dist/default/production\exerc5.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+cstackCOMRAM 1 1 1 19 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 3DA 1
+config 0 300000 300000 E 1
